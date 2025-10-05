@@ -1,14 +1,13 @@
 {
-  "name": "MonitorCripto ESP32",
+  "name": "ESP32 Flasher",
   "version": "1.0.0",
   "builds": [
     {
       "chipFamily": "ESP32",
       "parts": [
-        {
-          "path": "firmware.bin",
-          "offset": 4096
-        }
+        { "path": "bootloader.bin", "offset": "0x1000" },
+        { "path": "partitions.bin", "offset": "0x8000" },
+        { "path": "firmware.bin", "offset": "0x10000" }
       ]
     }
   ]
