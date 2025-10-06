@@ -1,5 +1,5 @@
 {
-  "name": "ESP32 Flasher",
+  "name": "ESP32 DevModule Flasher",
   "version": "1.0.0",
   "builds": [
     {
